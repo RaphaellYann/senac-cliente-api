@@ -1,10 +1,6 @@
 package br.com.senac.entidades;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Column;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
@@ -17,27 +13,31 @@ public class Clientes {
     @Column(nullable = false)
     private String documento;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 50)
     private String nome;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 100)
     private String sobrenome;
 
     @Column(nullable = false)
     private String email;
 
+    @Column
     private int idade;
 
+    @Column
     private String sexo;
 
+    @Column
     private LocalDate dataNascimento;
 
+    @Column
     private int ddd;
 
+    @Column
     private int telefone;
 
-    // Getters e setters
-
+    // Getters and Setters
     public Long getId() {
         return id;
     }
