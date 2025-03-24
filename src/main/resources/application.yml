@@ -1,1 +1,23 @@
+<<<<<<< HEAD
 spring.application.name=senac-cliente-api
+=======
+spring:
+  application:
+    name: senac-cliente-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/seu_banco_de_dados
+    username: postgress
+    password: Sen@c2023
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  liquibase:
+    enabled: false
+>>>>>>> 6bd64ce04bb77739a24f6a95c5e2a0416a729968

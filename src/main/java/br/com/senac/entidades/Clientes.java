@@ -2,7 +2,10 @@ package br.com.senac.entidades;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
+<<<<<<< HEAD
 import java.util.List;
+=======
+>>>>>>> 6bd64ce04bb77739a24f6a95c5e2a0416a729968
 
 @Entity
 public class Clientes {
@@ -14,15 +17,23 @@ public class Clientes {
     @Column(nullable = false)
     private String documento;
 
+<<<<<<< HEAD
     @Column(nullable = false)
     private String nome;
 
     @Column(nullable = false)
+=======
+    @Column(nullable = false, length = 50)
+    private String nome;
+
+    @Column(nullable = false, length = 100)
+>>>>>>> 6bd64ce04bb77739a24f6a95c5e2a0416a729968
     private String sobrenome;
 
     @Column(nullable = false)
     private String email;
 
+<<<<<<< HEAD
     private int idade;
 
     private String sexo;
@@ -38,6 +49,24 @@ public class Clientes {
 
     // Getters e setters
 
+=======
+    @Column
+    private int idade;
+
+    @Column
+    private String sexo;
+
+    @Column
+    private LocalDate dataNascimento;
+
+    @Column
+    private int ddd;
+
+    @Column
+    private int telefone;
+
+    // Getters and Setters
+>>>>>>> 6bd64ce04bb77739a24f6a95c5e2a0416a729968
     public Long getId() {
         return id;
     }
@@ -117,6 +146,7 @@ public class Clientes {
     public void setTelefone(int telefone) {
         this.telefone = telefone;
     }
+<<<<<<< HEAD
 
     public List<Endereco> getEnderecos() {
         return enderecos;
@@ -125,4 +155,6 @@ public class Clientes {
     public void setEnderecos(List<Endereco> enderecos) {
         this.enderecos = enderecos;
     }
+=======
+>>>>>>> 6bd64ce04bb77739a24f6a95c5e2a0416a729968
 }
